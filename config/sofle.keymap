@@ -81,7 +81,7 @@
 
             bindings = <
 &kp ESCAPE  &kp F1        &kp F2  &kp F3        &kp F4     &kp F5                       &kp F6  &kp F7            &kp F8  &kp F9             &kp F10               &trans
-&kp CAPS    &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp MINUS  &kp UNDER                    &trans  &kp LEFT_BRACKET  &trans  &kp RIGHT_BRACKET  &kp F11               &trans
+&kt CAPS    &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp MINUS  &kp UNDER                    &trans  &kp LEFT_BRACKET  &trans  &kp RIGHT_BRACKET  &kp F11               &trans
 &trans      &kp N7        &kp N8  &kp N9        &trans     &trans                       &trans  &trans            &trans  &trans             &kp F12               &trans
 &trans      &kp PLUS      &kp N0  &kp EQUAL     &trans     &trans     &trans    &trans  &trans  &trans            &trans  &trans             &kp NON_US_BACKSLASH  &trans
                           &trans  &trans        &trans     &trans     &trans    &trans  &trans  &trans            &trans  &trans
