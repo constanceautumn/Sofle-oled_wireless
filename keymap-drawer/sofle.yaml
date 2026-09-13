@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
   default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, TAB, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, LEFT SHIFT, A, S, D, F, G, H, J, K, L, .,
-    '''', LCTRL, Z, X, C, V, B, MUTE, ESCAPE, N, M, UP ARROW, ',', /, RSHFT, LEFT GUI, LALT, ;, lower, SPACE, ENTER, raise, LEFT, DOWN, RIGHT]
+    '''', LCTRL, Z, X, C, V, B, MUTE, PAUSE BREAK, N, M, UP ARROW, ',', /, RSHFT, LEFT GUI, LALT, ;, lower, SPACE, ENTER, raise, LEFT, DOWN, RIGHT]
   lower:
   - ESCAPE
   - F1
@@ -20,7 +20,7 @@ layers:
   - '5'
   - '6'
   - '-'
-  - {t: ▽, type: trans}
+  - _
   - {t: ▽, type: trans}
   - '['
   - {t: ▽, type: trans}
@@ -83,9 +83,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAGE UP
-  - {t: ▽, type: trans}
+  - '{'
   - INS
-  - {t: ▽, type: trans}
+  - '}'
   - PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
