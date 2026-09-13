@@ -57,7 +57,9 @@
                         &kp LEFT_GUI  &kp LALT  &kp SEMI  &mo LOWER  &kp SPACE     &kp ENTER   &mo RAISE  &kp LEFT  &kp DOWN      &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
         };
 
         lower_layer {
