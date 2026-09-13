@@ -14,18 +14,18 @@ layers:
   - F8
   - F9
   - F10
-  - COFFEE
+  - {t: ▽, type: trans}
   - CAPS
   - '4'
   - '5'
   - '6'
-  - $
-  - '%'
-  - ^
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '['
-  - KP MULTIPLY
+  - {t: ▽, type: trans}
   - ']'
-  - '='
+  - F11
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '7'
@@ -37,12 +37,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - +
   - '0'
-  - {t: ▽, type: trans}
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -75,7 +75,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - DELETE
+  - LOCK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
@@ -87,7 +87,7 @@ layers:
   - INS
   - {t: ▽, type: trans}
   - PRINTSCREEN
-  - BACKSPACE
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SELECT
   - PAGE DOWN
