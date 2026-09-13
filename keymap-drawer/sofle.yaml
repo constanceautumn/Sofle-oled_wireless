@@ -188,3 +188,5 @@ layers:
 combos:
 - p: [0, 12]
   k: ESC
+- p: [53, 12]
+  k: '&bl BL_TOG'

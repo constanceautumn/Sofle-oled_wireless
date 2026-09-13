@@ -381,6 +381,14 @@ path.combo {
 <rect rx="6" ry="6" x="14" y="78" width="28" height="26" class="combo"/>
 <text x="28" y="91" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-1">
+<path d="M172,197 l128,69" class="combo"/>
+<path d="M172,197 l-128,-69" class="combo"/>
+<rect rx="6" ry="6" x="158" y="184" width="28" height="26" class="combo"/>
+<text x="172" y="197" class="combo tap">
+<tspan x="172" dy="-0.6em">&amp;bl</tspan><tspan x="172" dy="1.2em">BL_TOG</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 398)" class="layer-lower">
@@ -628,6 +636,14 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="14" y="78" width="28" height="26" class="combo"/>
 <text x="28" y="91" class="combo tap">ESC</text>
+</g>
+<g class="combo combopos-1">
+<path d="M172,197 l128,69" class="combo"/>
+<path d="M172,197 l-128,-69" class="combo"/>
+<rect rx="6" ry="6" x="158" y="184" width="28" height="26" class="combo"/>
+<text x="172" y="197" class="combo tap">
+<tspan x="172" dy="-0.6em">&amp;bl</tspan><tspan x="172" dy="1.2em">BL_TOG</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -892,6 +908,14 @@ path.combo {
 <rect rx="6" ry="6" x="14" y="78" width="28" height="26" class="combo"/>
 <text x="28" y="91" class="combo tap">ESC</text>
 </g>
+<g class="combo combopos-1">
+<path d="M172,197 l128,69" class="combo"/>
+<path d="M172,197 l-128,-69" class="combo"/>
+<rect rx="6" ry="6" x="158" y="184" width="28" height="26" class="combo"/>
+<text x="172" y="197" class="combo tap">
+<tspan x="172" dy="-0.6em">&amp;bl</tspan><tspan x="172" dy="1.2em">BL_TOG</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1193)" class="layer-adjust">
@@ -1121,6 +1145,14 @@ path.combo {
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="14" y="78" width="28" height="26" class="combo"/>
 <text x="28" y="91" class="combo tap">ESC</text>
+</g>
+<g class="combo combopos-1">
+<path d="M172,197 l128,69" class="combo"/>
+<path d="M172,197 l-128,-69" class="combo"/>
+<rect rx="6" ry="6" x="158" y="184" width="28" height="26" class="combo"/>
+<text x="172" y="197" class="combo tap">
+<tspan x="172" dy="-0.6em">&amp;bl</tspan><tspan x="172" dy="1.2em">BL_TOG</tspan>
+</text>
 </g>
 </g>
 </g>
