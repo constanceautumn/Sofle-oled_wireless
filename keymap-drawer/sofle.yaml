@@ -105,7 +105,7 @@ layers:
   - CUT
   - COPY
   - PASTE
-  - BT CLR
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
