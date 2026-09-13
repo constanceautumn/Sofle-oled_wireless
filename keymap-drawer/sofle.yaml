@@ -3,7 +3,7 @@ layers:
   default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, TAB, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, LEFT SHIFT, A, S, D, F, G, H, J, K, L, .,
     '''', LCTRL, Z, X, C, V, B, MUTE, ESCAPE, N, M, UP ARROW, ',', /, RSHFT, LEFT GUI, LALT, ;, lower, SPACE, ENTER, raise, LEFT, DOWN, RIGHT]
   lower:
-  - F12
+  - ESCAPE
   - F1
   - F2
   - F3
@@ -14,10 +14,10 @@ layers:
   - F8
   - F9
   - F10
+  - {t: ▽, type: trans}
+  - CAPS
   - F11
-  - ESCAPE
-  - '!'
-  - '@'
+  - F12
   - '#'
   - $
   - '%'
@@ -26,7 +26,7 @@ layers:
   - KP MULTIPLY
   - ']'
   - '='
-  - \
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&'
   - '-'
@@ -53,7 +53,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CAPS
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -111,8 +111,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - UP ARROW
-  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - CAPS
   - {t: ▽, type: trans}
@@ -122,8 +122,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - LEFT ARROW
-  - DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   adjust:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
