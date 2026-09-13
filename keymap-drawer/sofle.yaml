@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, TAB, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, LEFT SHIFT, A, S, D, F, G, H, J, K, L, /,
-    '''', LCTRL, Z, X, C, V, B, MUTE, '', N, M, UP ARROW, ',', ., RSHFT, LEFT GUI, LALT, ;, lower, SPACE, ENTER, raise, LEFT, DOWN, LEFT]
+  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, TAB, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, LEFT SHIFT, A, S, D, F, G, H, J, K, L, .,
+    '''', LCTRL, Z, X, C, V, B, MUTE, ESCAPE, N, M, UP ARROW, ',', /, RSHFT, LEFT GUI, LALT, ;, lower, SPACE, ENTER, raise, LEFT, DOWN, RIGHT]
   lower:
   - F12
   - F1
@@ -15,7 +15,7 @@ layers:
   - F9
   - F10
   - F11
-  - '`'
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
@@ -25,22 +25,10 @@ layers:
   - '['
   - KP MULTIPLY
   - ']'
-  - '-'
-  - \
-  - LEFT SHIFT
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - {t: ▽, type: trans}
-  - KP MULTIPLY
-  - ;
-  - /
-  - ''''
-  - LCTRL
   - '='
+  - \
+  - {t: ▽, type: trans}
+  - '&'
   - '-'
   - KP PLUS
   - '{'
@@ -48,20 +36,32 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - ;
   - {t: ▽, type: trans}
-  - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RIGHT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - CAPS
-  - LEFT ALT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ','
-  - '&'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   raise:
   - {t: BT, h: '0'}
@@ -69,14 +69,14 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: BT, h: '4'}
+  - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - DELETE
-  - BT CLR
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
   - CMENU
@@ -88,7 +88,7 @@ layers:
   - {t: ▽, type: trans}
   - PRINTSCREEN
   - BACKSPACE
-  - LEFT SHIFT
+  - {t: ▽, type: trans}
   - SELECT
   - PAGE DOWN
   - {t: ▽, type: trans}
@@ -100,12 +100,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LCTRL
+  - {t: ▽, type: trans}
   - UNDO
   - CUT
   - COPY
   - PASTE
-  - {t: ▽, type: trans}
+  - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -115,7 +115,7 @@ layers:
   - RIGHT
   - {t: ▽, type: trans}
   - CAPS
-  - LEFT ALT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -125,12 +125,12 @@ layers:
   - LEFT ARROW
   - DOWN
   adjust:
-  - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - BT CLR
   - W
   - ''
   - ''
