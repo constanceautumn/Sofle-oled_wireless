@@ -33,6 +33,7 @@
         escape {
             bindings = <&kp ESC>;
             key-positions = <0 12>;
+            layers = <0>;
         };
 
         F1combo {
