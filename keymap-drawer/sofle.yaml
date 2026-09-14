@@ -188,6 +188,7 @@ layers:
 combos:
 - p: [0, 12]
   k: ESC
+  l: [default]
 - p: [1, 28]
   k: F1
   l: [lower]
