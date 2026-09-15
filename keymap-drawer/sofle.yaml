@@ -1,68 +1,9 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default:
-  - ESCAPE
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - DELETE
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - BACKSPACE
-  - '&caplockToggle'
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - .
-  - ''''
-  - LCTRL
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - MUTE
-  - PAUSE BREAK
-  - N
-  - M
-  - UP ARROW
-  - ','
-  - /
-  - RSHFT
-  - '`'
-  - LALT
-  - ;
-  - lower
-  - SPACE
-  - ENTER
-  - {t: CAPSLOCK, h: raise}
-  - LEFT
-  - DOWN
-  - RIGHT
+  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, TAB, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, LEFT SHIFT, A, S, D, F, G, H, J, K, L, .,
+    '''', LCTRL, Z, X, C, V, B, MUTE, PAUSE BREAK, N, M, UP ARROW, ',', /, RSHFT, LEFT GUI, LALT, ;, lower, SPACE, ENTER, '&caplocktoggle', LEFT, DOWN, RIGHT]
   lower:
-  - {t: ▽, type: trans}
+  - ESCAPE
   - '1'
   - '2'
   - '3'
@@ -179,7 +120,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -240,7 +181,7 @@ layers:
   - {type: held}
   - RGB TOG
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - ''
