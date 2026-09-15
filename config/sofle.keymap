@@ -47,20 +47,10 @@
             key-positions = <3 28>;
             layers = <1>;
         };
-    };
 
-    macros {
-        caplockrgb: caplockrgb {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&caplocktoggle>,
-                <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(322,100,50)>,
-                <&macro_release>,
-                <&rgb_ug RGB_COLOR_HSB(41,100,50)>;
-
-            label = "CAPLOCKRGB";
+        escapecombo {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 12>;
         };
     };
 
@@ -70,6 +60,17 @@
             label = "CAPLOCKTOGGLE";
             #binding-cells = <0>;
             bindings = <&mo 2>, <&lt 2 CAPSLOCK>;
+
+            tapping-term-ms = <400>;
+        };
+
+        layer1toggle: layer1toggle {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYER1TOGGLE";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&tog 1>;
+
+            tapping-term-ms = <400>;
         };
     };
 
@@ -87,11 +88,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE       &kp N1  &kp N2        &kp N3    &kp N4    &kp N5                                    &kp N6          &kp N7    &kp N8        &kp N9     &kp N0      &kp DELETE
-&kp TAB         &kp Q   &kp W         &kp E     &kp R     &kp T                                     &kp Y           &kp U     &kp I         &kp O      &kp P       &kp BACKSPACE
-&kp LEFT_SHIFT  &kp A   &kp S         &kp D     &kp F     &kp G                                     &kp H           &kp J     &kp K         &kp L      &kp PERIOD  &kp SINGLE_QUOTE
-&kp LCTRL       &kp Z   &kp X         &kp C     &kp V     &kp B      &kp C_MUTE    &kp PAUSE_BREAK  &kp N           &kp M     &kp UP_ARROW  &kp COMMA  &kp SLASH   &kp RSHFT
-                        &kp LEFT_GUI  &kp LALT  &kp SEMI  &mo LOWER  &kp SPACE     &kp ENTER        &caplocktoggle  &kp LEFT  &kp DOWN      &kp RIGHT
+&kp GRAVE       &kp N1  &kp N2        &kp N3    &kp N4    &kp N5                                        &kp N6          &kp N7    &kp N8        &kp N9     &kp N0      &kp DELETE
+&kp TAB         &kp Q   &kp W         &kp E     &kp R     &kp T                                         &kp Y           &kp U     &kp I         &kp O      &kp P       &kp BACKSPACE
+&kp LEFT_SHIFT  &kp A   &kp S         &kp D     &kp F     &kp G                                         &kp H           &kp J     &kp K         &kp L      &kp PERIOD  &kp SINGLE_QUOTE
+&kp LCTRL       &kp Z   &kp X         &kp C     &kp V     &kp B          &kp C_MUTE    &kp PAUSE_BREAK  &kp N           &kp M     &kp UP_ARROW  &kp COMMA  &kp SLASH   &kp RSHFT
+                        &kp LEFT_GUI  &kp LALT  &kp SEMI  &layer1toggle  &kp SPACE     &kp ENTER        &caplocktoggle  &kp LEFT  &kp DOWN      &kp RIGHT
             >;
 
             sensor-bindings =
