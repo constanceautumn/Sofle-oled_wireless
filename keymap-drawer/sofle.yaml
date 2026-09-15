@@ -102,15 +102,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - AC UNDO
-  - AC CUT
-  - AC COPY
-  - AC PASTE
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - MENU
+  - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
