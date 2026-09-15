@@ -80,22 +80,22 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
-  - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PAGE UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - INS
   - {t: ▽, type: trans}
   - PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SELECT
-  - PAGE DOWN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAGE DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -110,7 +110,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - CMENU
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
