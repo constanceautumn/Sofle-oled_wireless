@@ -1,8 +1,66 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, TAB, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, LEFT SHIFT, A, S, D, F, G, H, J, K, L, .,
-    '''', LCTRL, Z, X, C, V, B, MUTE, PAUSE BREAK, N, M, UP ARROW, ',', /, RSHFT, LEFT GUI, LALT, ;, '&layer1toggle', SPACE, ENTER, '&caplocktoggle', LEFT, DOWN,
-    RIGHT]
+  default:
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - DELETE
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BACKSPACE
+  - '&caplocktoggle'
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - /
+  - ''''
+  - LCTRL
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - MUTE
+  - PAUSE BREAK
+  - N
+  - M
+  - UP ARROW
+  - ','
+  - .
+  - RSHFT
+  - ;
+  - LEFT GUI
+  - LEFT ALT
+  - '&layer1toggle'
+  - SPACE
+  - ''''
+  - {t: SPACE, h: raise}
+  - LEFT
+  - DOWN
+  - RIGHT
   lower:
   - ESCAPE
   - '1'
@@ -22,11 +80,11 @@ layers:
   - '6'
   - '-'
   - _
-  - F11
-  - F12
   - {t: ▽, type: trans}
-  - '['
-  - ']'
+  - {t: ▽, type: trans}
+  - INSERT
+  - {t: ▽, type: trans}
+  - PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '7'
@@ -38,7 +96,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '}'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - +
@@ -65,17 +123,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   raise:
+  - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
   - SLEEP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -85,9 +143,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - INS
   - {t: ▽, type: trans}
-  - PRINTSCREEN
+  - '['
+  - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -110,7 +168,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CMENU
+  - APPLICATION
+  - {t: ▽, type: trans}
+  - '{'
+  - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -118,10 +179,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -182,19 +240,10 @@ layers:
   - ''
   - RGB TOG
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
 combos:
-- p: [1, 28]
-  k: F1
-  l: [lower]
-- p: [2, 28]
-  k: F2
-  l: [lower]
-- p: [3, 28]
-  k: F3
-  l: [lower]
 - p: [0, 12]
   k: ESCAPE
