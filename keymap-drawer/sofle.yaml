@@ -57,7 +57,7 @@ layers:
   - '&layer1toggle'
   - SPACE
   - ''''
-  - {t: SPACE, h: raise}
+  - {t: SPACE, h: '&newrgblayers_macro 2'}
   - LEFT
   - DOWN
   - RIGHT
@@ -179,7 +179,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '|'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -240,7 +240,7 @@ layers:
   - ''
   - RGB TOG
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - ''
