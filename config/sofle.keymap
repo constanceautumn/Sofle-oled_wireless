@@ -37,7 +37,7 @@
         };
 
         adjustlayerrgb {
-            bindings = <&mo 3>;
+            bindings = <&layer_macro 3>;
             key-positions = <53 56>;
         };
     };
