@@ -237,10 +237,10 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
+  - ''
   - RGB TOG
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - ''
@@ -249,4 +249,4 @@ combos:
   k: ESCAPE
   l: [default]
 - p: [53, 56]
-  k: adjust
+  k: '&layer_macro 3'
