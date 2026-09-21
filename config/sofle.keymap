@@ -36,9 +36,10 @@
             layers = <0>;
         };
 
-        adjustlayerrgb {
-            bindings = <&layer_macro 3>;
-            key-positions = <53 56>;
+        AltEnter {
+            bindings = <&none>;
+            key-positions = <56 35>;
+            layers = <2>;
         };
     };
 
@@ -47,9 +48,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CAPLOCKTOGGLE";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
+            bindings = <&kp LEFT_SHIFT>, <&caplocktoggle>;
 
-            tapping-term-ms = <500>;
+            tapping-term-ms = <400>;
         };
 
         layer1toggle: layer1toggle {
@@ -85,7 +86,8 @@
                 <&macro_tap>,
                 <&caplocktoggle>,
                 <&macro_tap>,
-                <&rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRD>;
+                <&rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRD>,
+                <&macro_press>;
 
             label = "CAPLOCK_MACRO";
         };
@@ -122,6 +124,18 @@
                 <&rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRD>;
 
             label = "ADJUSTEDLAYER_MACRO";
+        };
+
+        altenter_macro: altenter_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp ENTER>,
+                <&macro_tap>,
+                <&kp ENTER &kp RIGHT_ALT>;
+
+            label = "ALTENTER_MACRO";
         };
     };
 
@@ -188,7 +202,7 @@
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &kp F6   &kp F7             &kp F8  &kp F9            &kp F10               &kp K_SLEEP
 &trans      &trans        &kp PG_UP      &trans        &trans        &trans                            &kp F1   &kp F2             &kp F3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans
-&trans      &trans        &kp PAGE_DOWN  &trans        &trans        &trans                            &kp F11  &kp F12            &trans  &trans            &kp NON_US_BACKSLASH  &trans
+&trans      &trans        &kp PAGE_DOWN  &trans        &trans        &trans                            &kp F11  &kp F12            &trans  &trans            &kp NON_US_BACKSLASH  &altenter_macro
 &trans      &kp K_UNDO    &kp K_CUT      &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans    &trans   &kp K_APPLICATION  &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE       &trans
                           &trans         &trans        &trans        &trans        &trans    &kp PIPE  &trans   &trans             &trans  &trans
             >;
