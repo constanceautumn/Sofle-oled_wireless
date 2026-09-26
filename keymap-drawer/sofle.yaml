@@ -160,10 +160,10 @@ layers:
   - \
   - AltGr+ENTER
   - {t: ▽, type: trans}
-  - Ctl+UNDO
+  - Ctl+Z
   - Ctl+X
-  - Ctl+COPY
-  - Ctl+PASTE
+  - Ctl+C
+  - Ctl+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
