@@ -15,6 +15,8 @@
 #define RAISE 2
 #define ADJUST 3
 
+&gresc { mods = <(MOD_LGUI|MOD_RGUI|MOD_RSFT)>; };
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
@@ -44,15 +46,6 @@
     };
 
     behaviors {
-        caplocktoggle: caplocktoggle {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CAPLOCKTOGGLE";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&caplocktoggle>;
-
-            tapping-term-ms = <400>;
-        };
-
         layer1toggle: layer1toggle {
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER1TOGGLE";
@@ -71,27 +64,18 @@
             hold-trigger-key-positions = <56>;
             tapping-term-ms = <500>;
         };
+
+        caplocktoggle: caplocktoggle {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CAPLOCKTOGGLE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CLCK>;
+
+            tapping-term-ms = <400>;
+        };
     };
 
     macros {
-        layer1_macro: layer1_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&layer1toggle>,
-                <&macro_tap>,
-                <&rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRI &rgb_ug RGB_BRI>,
-                <&macro_pause_for_release>,
-                <&macro_tap>,
-                <&layer1toggle>,
-                <&macro_release>,
-                <&macro_tap>,
-                <&rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRD &rgb_ug RGB_BRD>;
-
-            label = "LAYER1_MACRO";
-        };
-
         layer_macro: adjustedlayer_macro {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
