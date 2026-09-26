@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - BACKSPACE
-  - '&Caplock_macro'
+  - '&caplocktoggle'
   - A
   - S
   - D
