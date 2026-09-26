@@ -44,7 +44,7 @@ layers:
   - V
   - B
   - MUTE
-  - PAUSE BREAK
+  - PLAY PAUSE
   - N
   - M
   - UP ARROW
@@ -62,10 +62,10 @@ layers:
   - DOWN
   - RIGHT
   lower:
-  - ESCAPE
-  - '1'
-  - '2'
-  - '3'
+  - '~'
+  - {t: '1', s: F1}
+  - {t: '2', s: F2}
+  - {t: '3', s: F3}
   - F4
   - F5
   - F6
@@ -137,33 +137,33 @@ layers:
   - SLEEP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PG UP
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - '['
-  - ']'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PAGE DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F11
   - F12
   - {t: ▽, type: trans}
+  - '['
+  - ']'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
   - {t: ▽, type: trans}
   - \
-  - '&altenter_macro'
+  - AltGr+ENTER
   - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - Ctl+UNDO
+  - Ctl+X
+  - Ctl+COPY
+  - Ctl+PASTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -184,12 +184,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   adjust:
+  - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - BT CLR
   - W
   - ''
   - ''
@@ -244,10 +244,3 @@ layers:
   - ''
   - ''
   - ''
-combos:
-- p: [0, 12]
-  k: ESCAPE
-  l: [default]
-- p: [56, 35]
-  k: ''
-  l: [raise]
