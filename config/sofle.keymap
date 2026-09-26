@@ -85,9 +85,9 @@
                 <&macro_pause_for_release>,
                 <&macro_tap>,
                 <&caplocktoggle>,
+                <&macro_release>,
                 <&macro_tap>,
-                <&rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRD>,
-                <&macro_press>;
+                <&rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRD &rgb_ug RGB_BRD>;
 
             label = "CAPLOCK_MACRO";
         };
@@ -103,6 +103,7 @@
                 <&macro_pause_for_release>,
                 <&macro_tap>,
                 <&layer1toggle>,
+                <&macro_release>,
                 <&macro_tap>,
                 <&rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRD &rgb_ug RGB_BRD>;
 
